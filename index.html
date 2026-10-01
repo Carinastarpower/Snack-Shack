@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack Shack Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&amp;family=Luckiest+Guy&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="menu-section" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <h1 id="menu-title">Snack Shack</h1>
+          <p class="subhead">Today's Menu</p>
+        </div>
+
+        <aside class="pickup-banner" aria-label="Pickup information">
+          Pick up at Room 214, 12:15–12:45 PM.
+        </aside>
+
+        <div class="menu-filters" aria-label="Menu categories">
+          <button class="menu-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="menu-filter" type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+          <button class="menu-filter" type="button" data-filter="snacks" aria-pressed="false">Snacks</button>
+        </div>
+
+        <div class="shop-layout">
+          <div class="menu-grid" aria-label="Today's snack menu">
+            <article class="menu-card" data-category="snacks" data-name="Skinny Pop" data-price="2.00" data-what="Popcorn" data-reason="A light, crunchy snack that satisfies a salty craving without slowing you down." data-calories="150 calories" data-allergens="May contain milk ingredients.">
+              <img src="https://target.scene7.com/is/image/Target/GUEST_8d8372b8-2770-40b9-ba3d-e832a909173b" alt="Fresh popcorn" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Skinny Pop</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Snyder's" data-price="2.50" data-what="Mini salted pretzels" data-reason="A crunchy, portable snack with a satisfying salty bite for a quick midday boost." data-calories="110 calories" data-allergens="Contains wheat.">
+              <img src="https://www.simpalosnacks.com/cdn/shop/products/SnydersOfHanover_MiniPretzels_1024x1024.jpg?v=1571439580" alt="Soft pretzel" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Snyder's</span>
+                </span>
+                <strong>$2.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Tostito Nacho" data-price="3.00" data-what="Nacho-flavored tortilla chips" data-reason="A bold, crunchy snack that brings big nacho flavor to your lunch break." data-calories="140 calories" data-allergens="Contains corn; may contain milk ingredients.">
+              <img src="https://digitalassets.pepsico.com/m/26a5c6b52c5404ee/original/00028400517997_C1C1.png" alt="Tostitos tortilla chips bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Tostito Nacho</span>
+                </span>
+                <strong>$3.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Little Debbie" data-price="1.75" data-what="Fudge brownie snack cake" data-reason="A rich chocolate treat that makes a sweet afternoon break feel extra special." data-calories="280 calories" data-allergens="Contains wheat, milk, egg, and soy.">
+              <img src="https://i5.walmartimages.com/asr/310a8b77-0e2c-44ac-82b3-fb5e5fc2b180.bbe28edb06fd8bc4ea10ef6f1ddc8082.jpeg" alt="Little Debbie fudge brownie" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Little Debbie</span>
+                </span>
+                <strong>$1.75</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Dole" data-price="2.25" data-what="Mixed fruit cup" data-reason="A bright, juicy option when you want something refreshing and easy to eat." data-calories="70 calories">
+              <img src="https://i5.walmartimages.com/asr/3f96234f-0033-4bcd-adf2-d4d23134b003.9c7301d2aa7a6ee238b6d24e3852bc09.jpeg" alt="Dole mixed fruit cup" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Dole</span>
+                </span>
+                <strong>$2.25</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="Poland Spring" data-price="1.00" data-what="Spring water" data-reason="A simple way to stay hydrated through the rest of the school day." data-calories="0 calories">
+              <img src="https://www.stockupexpress.com/cdn/shop/files/d08346f5-e3d7-41a8-8a77-cc5e027b2cf5.jpg?v=1752671960" alt="Poland Spring water bottle" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Poland Spring</span>
+                </span>
+                <strong>$1.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="Minute Maid" data-price="1.50" data-what="Lemonade" data-reason="A refreshing, sweet-tart drink that pairs perfectly with a salty snack." data-calories="150 calories">
+              <img src="https://img.cdn4dd.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D1200%2Cheight%3D672%2Cformat%3Dauto/https%3A/doordash-static.s3.amazonaws.com/media/photosV2/4712433f-65a4-4e6e-b433-0803af81cbf4-retina-large.png" alt="Minute Maid lemonade carton" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Minute Maid</span>
+                </span>
+                <strong>$1.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="Gatorade" data-price="2.00" data-what="Lemon-lime sports drink" data-reason="A refreshing drink with electrolytes and carbohydrates to help you rehydrate and refuel after a busy lunch period." data-calories="130 calories per bottle">
+              <img src="https://de2wfhoo6xqi5.cloudfront.net/orig/673/da9/e55e253d62bee5fa901a20e9e494d6de48.jpg" alt="Gatorade lemon-lime sports drink bottle" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Gatorade</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="Coca-Cola" data-price="2.00" data-what="Carbonated cola" data-reason="A cold, fizzy classic that adds a familiar sweet and refreshing flavor to your lunch break." data-calories="140 calories per 12 fl oz serving">
+              <img src="https://assets.icanet.se/images/%24coordinate_1%2Cx_0%2Cy_0%2Cw_700%2Ch_700%2Cc_crop/v1725368432/pronto/1004581/icacatering/pb18zip5owxeme5dpfnm/coca-cola-50cl.webp" alt="Coca-Cola Original Taste bottle" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Coca-Cola</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="Sprite" data-price="2.00" data-what="Lemon-lime soda" data-reason="A crisp, bubbly drink with bright lemon-lime flavor that makes lunch feel extra refreshing." data-calories="230 calories per bottle">
+              <img src="https://mobileimages.lowes.com/productimages/a624e2d0-31d5-4ed3-89fc-c09683426d89/69707304.jpeg?size=pdhism" alt="Sprite lemon-lime soda bottle" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Sprite</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="Fanta" data-price="2.00" data-what="Orange soda" data-reason="A colorful, fizzy orange drink with a bold fruit flavor for a fun lunch break treat." data-calories="270 calories per bottle">
+              <img src="https://www.chefstore.com/images/usf_items/6928063/6928063.png" alt="Fanta orange soda bottle" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Fanta</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Chips Ahoy" data-price="1.25" data-what="Chocolate chip cookies" data-reason="A classic sweet crunch that is easy to share or enjoy as a quick dessert." data-calories="160 calories" data-allergens="Contains wheat, milk, soy, and egg.">
+              <img src="https://i5.walmartimages.com/asr/9fea74a6-3890-42bf-ac04-12bf6e468cb2.fde97262d9eed250b747aca13928bd9a.jpeg" alt="Chips Ahoy chocolate chip cookies package" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Chips Ahoy</span>
+                </span>
+                <strong>$1.25</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Chex Mix" data-price="2.00" data-what="Traditional savory snack mix" data-reason="A satisfying mix of crunchy cereal squares, pretzels, rye chips, and breadsticks gives you a little bit of everything in every handful." data-calories="140 calories per half-cup serving" data-allergens="Contains wheat and soy.">
+              <img src="https://mojo.generalmills.com/api/public/content/-DKG4ltTQIipJNVFZe7hcQ_04c57eea-66a2-45cd-a3f2-ecd27146a451_04c57eea-66a2-45cd-a3f2-ecd27146a451.png?t=04c57eea66a245cda3f2ecd27146a451&v=8ddec089" alt="Chex Mix Traditional snack mix bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Chex Mix</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Takis" data-price="2.00" data-what="Fuego rolled tortilla chips" data-reason="A bold, crunchy snack with intense hot chili pepper and tangy lime flavor for anyone who likes extra heat." data-calories="260 calories per serving" data-allergens="May contain milk, wheat, soy, and peanuts.">
+              <img src="https://takis.ca/sites/default/files/styles/max_width_1200_no_alt/public/2023-07/Takis%20Fuego%20280g%20clean%20%282%29.png?itok=xoa17dfQ" alt="Takis Fuego rolled tortilla chips bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Takis</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Cheetos" data-price="1.75" data-what="Crunchy cheese-flavored snacks" data-reason="A cheesy, crunchy classic that brings a playful, satisfying bite to snack time." data-calories="160 calories per serving" data-allergens="Contains milk; may contain soy.">
+              <img src="https://i5.peapod.com/c/3I/3IS2X.png" alt="Cheetos Crunchy cheese snacks bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Cheetos</span>
+                </span>
+                <strong>$1.75</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Nerds Gummy Clusters" data-price="2.00" data-what="Rainbow gummy candy clusters" data-reason="A fun mix of tangy, crunchy Nerds candy pieces and a soft gummy center in every bite." data-calories="100 calories per serving">
+              <img src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_900f8665-c27f-4848-be0b-a8cac5e70b43.jpg" alt="Nerds Gummy Clusters candy bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Nerds Gummy Clusters</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Sour Patch Kids" data-price="1.50" data-what="Sour gummy candy" data-reason="A playful sour-then-sweet treat with soft, chewy fruit flavor." data-calories="110 calories per serving">
+              <img src="https://www.candydirect.com/cdn/shop/files/sour-patch-kids-original_580x.jpg?v=1773318804" alt="Sour Patch Kids candy bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Sour Patch Kids</span>
+                </span>
+                <strong>$1.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="M&amp;M's" data-price="1.50" data-what="Milk chocolate candies" data-reason="Colorful candy shells and smooth milk chocolate make this an easy classic to share." data-calories="140 calories per serving" data-allergens="Contains milk and soy; may contain peanuts.">
+              <img src="https://i5.walmartimages.com/asr/f20e5ddc-88a5-4df7-ad38-1ffdbda7f2b7_1.26b3308a455b406a05b64938ca749d11.jpeg" alt="M&amp;M's milk chocolate candy bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">M&amp;M's</span>
+                </span>
+                <strong>$1.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Skittles" data-price="1.50" data-what="Fruity bite-size candies" data-reason="A bright, fruity rainbow of flavors that adds color and fun to your snack break." data-calories="250 calories per pack">
+              <img src="https://www.skittles.com/sites/g/files/fnmzdf586/files/migrate-product-files/bam8afcev37jvz2mfpnk.png" alt="Skittles Original candy bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Skittles</span>
+                </span>
+                <strong>$1.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Ice Breakers" data-price="1.50" data-what="Cool mint candies" data-reason="A convenient sugar-free mint for a crisp, refreshing boost after lunch." data-calories="5 calories per serving" data-allergens="Contains soy and phenylalanine.">
+              <img src="https://clickcuisineuae.com/cdn/shop/files/0_34000_00007_4_701_72060_066_Item_Front.png?v=1755083622" alt="Ice Breakers Cool Mint tin" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Ice Breakers</span>
+                </span>
+                <strong>$1.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Hubba Bubba Gum" data-price="1.50" data-what="Original bubble gum tape" data-reason="A playful, long-lasting gum with six feet of bubble-blowing fun in one roll." data-calories="10 calories per serving" data-allergens="Contains soy.">
+              <img src="https://i5.walmartimages.com/asr/43d9eec3-de95-4b55-aa52-dc3a8483f3de.a9f8a3ad99e0b0e73f6afe714984c501.jpeg" alt="Hubba Bubba Bubble Tape gum container" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Hubba Bubba Gum</span>
+                </span>
+                <strong>$1.50</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="snacks" data-name="Nacho Cheese Dorito" data-price="2.00" data-what="Nacho cheese tortilla chips" data-reason="A bold, cheesy crunch that pairs well with a sandwich or stands on its own." data-calories="150 calories per serving" data-allergens="Contains milk, wheat, and soy.">
+              <img src="https://target.scene7.com/is/image/Target/GUEST_bf0ff5de-e003-4c8b-840f-85d39cb32575" alt="Doritos Nacho Cheese bag" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">Nacho Cheese Dorito</span>
+                </span>
+                <strong>$2.00</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+
+            <article class="menu-card" data-category="drinks" data-name="SunnyD" data-price="1.75" data-what="Tangy orange citrus punch" data-reason="A bright, tangy citrus drink that brings a fruity burst and vitamin C to your lunch break." data-calories="120 calories per bottle">
+              <img src="https://storage.googleapis.com/images-fol-prd-83dd8b8.fol.prd.v8.commerce.mi9cloud.com/product-images/detail/5020056000.jpg" alt="SunnyD Tangy Original bottle" />
+              <span class="item-details">
+                <span class="item-copy">
+                  <span class="item-name">SunnyD</span>
+                </span>
+                <strong>$1.75</strong>
+              </span>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </article>
+          </div>
+
+          <aside class="cart-panel" aria-labelledby="cart-title">
+            <div>
+              <p class="cart-label">Your order</p>
+              <h2 id="cart-title">Shopping Cart</h2>
+            </div>
+            <ul id="cart-items" class="cart-items">
+              <li class="empty-cart">Click a snack to add it here.</li>
+            </ul>
+            <div class="cart-total">
+              <span>Total to bring</span>
+              <strong id="cart-total">$0.00</strong>
+            </div>
+            <button id="clear-cart" class="clear-cart" type="button" disabled>Clear cart</button>
+            <button id="buy-now" class="buy-now" type="button" disabled>Buy now</button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <section id="snack-detail" class="snack-detail" aria-hidden="true" aria-labelledby="detail-title">
+      <div class="detail-shell">
+        <button id="close-detail" class="back-button" type="button">Back to menu</button>
+        <div class="detail-content">
+          <div class="detail-visuals">
+            <img id="detail-image" class="detail-image" src="" alt="" />
+            <div id="takis-flavors" class="takis-flavors" hidden aria-label="Takis flavors"></div>
+            <div id="doritos-flavors" class="takis-flavors doritos-flavors" hidden aria-label="Doritos flavors"></div>
+          </div>
+          <div class="detail-copy">
+            <p class="cart-label">Snack details</p>
+            <h2 id="detail-title"></h2>
+            <dl class="detail-facts">
+              <div>
+                <dt>What it is</dt>
+                <dd id="detail-what"></dd>
+              </div>
+              <div>
+                <dt>Why buy it</dt>
+                <dd id="detail-reason"></dd>
+              </div>
+              <div>
+                <dt>Calories</dt>
+                <dd id="detail-calories"></dd>
+              </div>
+              <div id="detail-allergen-row">
+                <dt>Allergic warning</dt>
+                <dd id="detail-allergens"></dd>
+              </div>
+            </dl>
+            <button id="detail-add-to-cart" class="add-to-cart detail-add-to-cart" type="button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy-screen" class="buy-screen" aria-hidden="true" aria-label="Buy now screen">
+      <div class="buy-shell">
+        <button id="close-buy" class="back-button buy-back" type="button" aria-label="Back to menu" title="Back to menu">← Back</button>
+        <div class="buy-artwork">
+          <img class="buy-image" src="https://i.redd.it/8fucy60g33h31.jpg" alt="Buy now reference artwork" />
+        </div>
+      </div>
+    </section>
+
+    <section id="purchase-complete" class="purchase-complete" aria-hidden="true" aria-label="Purchase completed">
+      <p>Purchase completed</p>
+    </section>
+  </body>
+</html>
